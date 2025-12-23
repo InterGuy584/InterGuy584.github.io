@@ -72,6 +72,17 @@ h2 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
+    /* Add a smooth transition for the transform effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Define the state when the element is hovered over */
+.project-card:hover {
+    /* Scale the element to 1.1 times its original size */
+    transform: scale(1.1);
+    /* Add a more pronounced shadow to enhance the pop-out feel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h3 {
@@ -113,4 +124,5 @@ footer {
     header h1 {
         font-size: 1.8rem;
     }
+
 }
